@@ -4,6 +4,13 @@
   const open =document.getElementById("open");
   const close =document.getElementById("close");
   const overlay =document.querySelector(".overlay");
+  const a =document.querySelector(".a");
+  const b =document.querySelector(".b");
+  const c =document.querySelector(".c");
+  const d =document.querySelector(".d");
+  const e =document.querySelector(".e");
+  
+  
 
   open.addEventListener("click",()=>{
     overlay.classList.add("show");
@@ -13,6 +20,28 @@
     overlay.classList.remove("show");
     open.classList.remove("hide");
   })
+  a.addEventListener("click",()=>{
+    overlay.classList.remove("show");
+    open.classList.remove("hide");
+  })
+  b.addEventListener("click",()=>{
+    overlay.classList.remove("show");
+    open.classList.remove("hide");
+  })
+  c.addEventListener("click",()=>{
+    overlay.classList.remove("show");
+    open.classList.remove("hide");
+  })
+  d.addEventListener("click",()=>{
+    overlay.classList.remove("show");
+    open.classList.remove("hide");
+  })
+  e.addEventListener("click",()=>{
+    overlay.classList.remove("show");
+    open.classList.remove("hide");
+  })
+  
+  
 
   function changeColor(){
 
@@ -28,7 +57,7 @@
 
     if( 0>=trigger1Y+430){
       body.classList.remove("show-navi");
-      console.log("a")
+      
 
     }else{
       body.classList.add("show-navi")
